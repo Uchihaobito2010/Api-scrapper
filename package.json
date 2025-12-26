@@ -1,0 +1,20 @@
+{
+  "name": "my-scraping-api",
+  "version": "1.0.0",
+  "description": "API for scraping hosted by YOUR_NAME on Vercel",
+  "main": "index.js",
+  "scripts": {
+    "start": "node api/scrape.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
+  "author": "Paras Chourasiya / tg - @Aotpy",
+  "license": "MIT"
+}
