@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "name": "my-scraping-api",
+  "builds": [
+    {
+      "src": "api/scrape.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/hello.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/api/scrape"
+    },
+    {
+      "src": "/api/scrape",
+      "dest": "/api/scrape"
+    },
+    {
+      "src": "/api/hello",
+      "dest": "/api/hello"
+    },
+    {
+      "src": "/api/github",
+      "dest": "/api/scrape"
+    }
+  ],
+  "env": {
+    "HOSTED_BY": "YOUR_NAME"
+  }
+}
